@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9021cf50-cdbb-4955-b965-339f39a1285c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helloworld.iml" afterPath="$PROJECT_DIR$/helloworld.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ScalaApp.scala" afterPath="$PROJECT_DIR$/src/ScalaApp.scala" />
-    </list>
+    <list default="true" id="9021cf50-cdbb-4955-b965-339f39a1285c" name="Default" comment="" />
     <ignored path="helloworld.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
