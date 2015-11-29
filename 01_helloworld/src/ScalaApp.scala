@@ -61,6 +61,12 @@ object ScalaApp {
       else
         x.multiply(factorialNoNative(x.subtract(BigInteger.ONE)))
 
-    
+    class MyClass(index: Int, name: String){
+      def lol(): Unit =
+        println(this.index)
+    }
+
+    object lol = new MyClass(1,"alucin")
+    println(lol.lo);
   }
 }
