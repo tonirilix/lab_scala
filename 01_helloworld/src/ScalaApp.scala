@@ -61,12 +61,18 @@ object ScalaApp {
       else
         x.multiply(factorialNoNative(x.subtract(BigInteger.ONE)))
 
+    /**
+      * This is one of the ways to create a class with a constructor. Cool!
+      * Less code might end in less errors
+      * @param index
+      * @param name
+      */
     class MyClass(index: Int, name: String){
-      def lol(): Unit =
-        println(this.index)
+      def foo(): Unit =
+        println(this.index);
     }
+    new MyClass(1,"s").foo();
 
-    object lol = new MyClass(1,"alucin")
-    println(lol.lo);
+    
   }
 }
