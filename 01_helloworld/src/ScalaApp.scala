@@ -3,12 +3,18 @@
   */
 
 /**
-  * The following code isn't intended to be a practice but just references of really general stuff
+  * The following code isn't intended to be a practice but just references to have a big picture
   */
+
+
 object ScalaApp {
+
   import java.math.BigInteger
 
-
+  /**
+    * Main!
+    * @param args
+    */
   def main(args: Array[String]) {
     println("Hello, world!");
 
@@ -27,21 +33,34 @@ object ScalaApp {
     println(capital("France"));
 
     /**
+      * *****************
       * Growing new types
       * BigInt
+      * *****************
+      */
+
+    /**
+      *
+      * @param x
+      * @return
       */
     def factorial(x: BigInt): BigInt =
       if (x == 0) 1 else x * factorial(x - 1);
 
-    println(factorial(30))
+    println("Factorial" + factorial(30))
+
 
     /**
-      * BigInt with Java BigInteger implementation doesn't feel like a native implementation
+      * BigInt with Java BigInteger implementation doesn't feel like a native implementation.
+      * So Scala lets you add new types that can be used as conveniently as built-in types.
+      * Cool!
       */
-    def factorial(x: BigInteger): BigInteger =
+    def factorialNoNative(x: BigInteger): BigInteger =
       if (x == BigInteger.ZERO)
         BigInteger.ONE
       else
-        x.multiply(factorial(x.subtract(BigInteger.ONE)))
+        x.multiply(factorialNoNative(x.subtract(BigInteger.ONE)))
+
+    
   }
 }
