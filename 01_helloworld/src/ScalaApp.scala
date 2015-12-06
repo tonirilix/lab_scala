@@ -1,3 +1,5 @@
+import scala.collection.immutable.HashMap
+
 /**
   * Created by tonirilix on 10/11/15.
   */
@@ -72,6 +74,18 @@ object ScalaApp {
         println(this.index);
     }
     new MyClass(1,"s").foo();
+
+
+    /**
+      * Type inference system
+      */
+
+    // the annoying way
+    val x1: HashMap[Int, String] = new HashMap[Int, String]()
+
+    // a little less annoying way
+    val x2 = new HashMap[Int, String]()
+    val x3: Map[Int, String] = new HashMap()
 
 
   }
