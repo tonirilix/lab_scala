@@ -73,6 +73,6 @@ object ScalaApp {
     }
     new MyClass(1,"s").foo();
 
-    
+
   }
 }
