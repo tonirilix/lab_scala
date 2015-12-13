@@ -5,6 +5,11 @@
 
 println("Hello, world, from a script");
 
+// A small validation for args
+if(args.length > 0){
+  println("Hello, " + args(0) + "!")
+}
+
 
 /**
   * Define some variables.
