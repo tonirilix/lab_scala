@@ -6,8 +6,17 @@
 println("Hello, world, from a script");
 
 // A small validation for args
-if(args.length > 0){
+if (args.length > 0) {
+  // Just printing first argument passed trhough command line
   println("Hello, " + args(0) + "!")
+
+  // Loop with while; decide with if. This is not the best way to to avoid iterating through arrays with indexes
+  // It's just a explanation of the while structure
+  var i = 0
+  while (i < args.length) {
+    println(args(i))
+    i += 1
+  }
 }
 
 
