@@ -14,7 +14,10 @@ val big = new BigInteger("123456");
 val greetStrings = new Array[String](3);
 greetStrings(0) = "Hello";
 greetStrings(1) = ", ";
-greetStrings(2) = "word!\n";
+greetStrings(2) = "world!\n";
+
+// Parameterize with types in a more explicit way
+val greetStrings2: Array[String] = new Array[String](3);
 
 /**
   * Let's print the array, but let's also talk about the "to" word in the bellow line of code:
@@ -23,7 +26,7 @@ greetStrings(2) = "word!\n";
   */
 for (i <- 0 to 2){
   print(greetStrings(i)); // This is the same of the bellow way
-  print(greetStrings.apply(i)); // This is because of the bellow explanation about arrays
+  //print(greetStrings.apply(i)); // This is because of the bellow explanation about arrays
 }
 
 /**
@@ -39,9 +42,22 @@ for (i <- 0 to 2){
   * Thus a accessing an element of an array in Scala is simple a method call like any other.
   */
 
+/**
+  * NOTE: Mind Blowing thing about Scala. XD
+  * Well well well... So the above explanation was a little bit superficial, and this one will be the same way XD
+  * But it'll tell the real why about we have to use parentheses instead of brackets.
+  * In Scala, everything (Literally everything) are objects with methods.
+  *
+  * That way we can do something like:
+  */
+val greetString3 = new Array[String](3);
+greetString3.update(0, "Hello");
+greetString3.update(1, ", ");
+greetString3.update(2, "world!\n");
+for (i <- 0.to(2)){
+  print(greetString3.apply(i));
+}
 
-// Parameterize with types in a more explicit way
-val greetStrings2: Array[String] = new Array[String](3);
 
 /**
   * NOTE: As we said before, val can't be reassigned but
