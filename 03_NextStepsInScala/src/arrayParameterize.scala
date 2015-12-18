@@ -60,6 +60,15 @@ for (i <- 0.to(2)){
 
 
 /**
+  * A more concise way to create an initialize arrays
+  */
+// As you'd normally write it
+val nulNames = Array("zero", "one", "two");
+// As it's transformed
+val numNames2 = Array.apply("zero", "one", "two");
+
+
+/**
   * NOTE: As we said before, val can't be reassigned but
   * the object to which it refers can could potentially still be changed
   */
