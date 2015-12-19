@@ -49,3 +49,12 @@ println(oneTwoThree2);
   */
 
 val oneTwoThree3 = 1 :: 2 :: 3 :: Nil;
+println("oneTwoThree3 " + oneTwoThree3);
+println("oneTwoThree3 reverse "+ oneTwoThree3.reverse);
+
+/**
+  * NOTE: List offers an append method, it's written :+, but
+  * it's rarely used, because the time it takes to append to a list grows linearly with the size
+  * of the list.
+  * The best option is to prepend and then call "reverse" or use a ListBuffer and then call toList
+  */
