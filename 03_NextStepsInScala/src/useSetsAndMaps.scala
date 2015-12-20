@@ -20,14 +20,27 @@ println(jetSet.contains("Cessna"));
 println("jetSet: " + jetSet);
 
 
-
 /**
   * NOTE:
   */
-import scala.collection.mutable.Map;
 
-val treasureMap = Map[Int, String]();
+// import scala.collection.mutable.Map;
+
+var treasureMap = Map[Int, String]();
 treasureMap += (1 -> "Go Island.");
 treasureMap += (2 -> "Find big X on ground.");
 treasureMap += (3 -> "Dig.");
 println("TreasureMap: " + treasureMap(2));
+
+
+var romanNumeral = Map(
+  1 -> "I",
+  2 -> "II",
+  3 -> "III",
+  4 -> "IV",
+  5 -> "V"
+);
+
+romanNumeral += (6 -> "VI");
+
+println(romanNumeral);
