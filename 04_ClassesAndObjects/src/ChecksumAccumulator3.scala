@@ -9,7 +9,7 @@
   * 2. Another way to express side effects methods is to leave off the result type and the equals sign,
   * and enclose the body of the method in curly braces
   *
-  * 3. Whenever you leave off the equals sign before the body of a functoin, its result type will
+  * 3. Whenever you leave off the equals sign before the body of a function, its result type will
   * definitely be Unit
   */
 class ChecksumAccumulator3 {
