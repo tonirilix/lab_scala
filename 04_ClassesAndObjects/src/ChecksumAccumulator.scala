@@ -1,18 +1,10 @@
 /**
-  * Created by tonirilix on 1/9/16.
-  */
-
-/**
-  * NOTES:
-  * 1. The below singleton has the same name as the class and because of that it's called companion object
-  *   and the class is called companion class.
-  * 2. A class and its companion object can access each other's private members.
-  *
+  * Created by tonirilix on 3/15/16.
   */
 
 import scala.collection.mutable.Map;
 
-class ChecksumAccumulator4 {
+class ChecksumAccumulator {
   private var sum = 0;
 
   def add(b: Byte) { sum += b }
@@ -20,14 +12,14 @@ class ChecksumAccumulator4 {
 }
 
 
-object ChecksumAccumulator4 {
+object ChecksumAccumulator {
   private val cache = Map[String, Int]()
 
   def calculate(s: String): Int = {
     if(cache.contains((s)))
       cache(s)
     else {
-      val acc = new ChecksumAccumulator4
+      val acc = new ChecksumAccumulator
       for (c <- s)
         acc.add(c.toByte)
 
