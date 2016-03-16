@@ -4,7 +4,10 @@
 
 /**
   * NOTES:
-  * 1.
+  * 1. The below singleton has the same name as the class and because of that it's called companion object
+  *   and the class is called companion class.
+  * 2. A class and its companion object can access each other's private members.
+  * 
   */
 
 import scala.collection.mutable.Map;
